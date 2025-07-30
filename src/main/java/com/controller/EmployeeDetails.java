@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.service.DeleteEmpRecord;
 import com.service.FetchAllRecord;
 import com.service.FetchSingleRecord;
 import com.service.InsertEmpData;
@@ -14,6 +15,9 @@ public class EmployeeDetails {
 
 		UpdateEmpData update = new UpdateEmpData();
 		update.updateRecord();
+		
+		DeleteEmpRecord delete = new DeleteEmpRecord();
+		delete.deleteRecord();
 
 		FetchSingleRecord single = new FetchSingleRecord();
 		single.singleRecord();

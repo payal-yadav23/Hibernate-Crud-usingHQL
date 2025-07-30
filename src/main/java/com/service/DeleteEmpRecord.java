@@ -14,12 +14,15 @@ public class DeleteEmpRecord {
 		Session ss = dao.getSession();
 		Transaction tr = ss.beginTransaction();
 
-		String hqlQuery = "delete from Student where id =: id";
+		String hqlQuery = "delete from Employee where id =: id";
 		MutationQuery query = ss.createMutationQuery(hqlQuery);
 		query.setParameter("id", 4);
-		query.executeUpdate();
+		int i = query.executeUpdate();
 
-		System.out.println("Data is deleted...");
+		if (i > 0) {
+			System.out.println("Data is deleted...");
+
+		}
 		tr.commit();
 		ss.close();
 
