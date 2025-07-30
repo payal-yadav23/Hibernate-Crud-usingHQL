@@ -7,16 +7,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="emp_details")
+@Table(name = "emp_details")
 public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int emp_id;
-	String empName;
-	String empDept;
-	String gender;
-	double salary;
+	private int emp_id;
+	private String empName;
+	private String empDept;
+	private String gender;
+	private double salary;
 
 	public Employee() {
 
