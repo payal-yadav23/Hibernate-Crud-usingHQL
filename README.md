@@ -37,7 +37,7 @@ hibernate-crud-usingHQL/
 │ ├── entity/ --> Employee.java
 │ ├── dao/ --> EmployeeDao.java (Session setup)
 │ ├── service/ --> InsertEmployee.java, ReadEmployee.java, UpdateEmployee.java, DeleteEmployee.java
-│ └── controller/ --> MainController.java (to test all operations)
+│ └── controller/ --> EmployeeDetails.java (to test all operations)
 │
 ├── resources/
 │ └── hibernate.cfg.xml --> Hibernate DB configuration
